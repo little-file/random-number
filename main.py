@@ -27,7 +27,7 @@ def zerotohundred():
         z = int(T)
         if z  == x:
             print("True")
-        x = random.randint(0,100)
+            x = random.randint(0,100)
         elif z != x:
             print("Try again.")
 
