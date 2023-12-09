@@ -10,7 +10,8 @@ This project includes a simple Python application capable of generating random n
 ## Requirements
 * python(3.6 or newer)
 * terminal
-## Çalıştırma
+
+## Çalıştırmak için
 Proje klasörüne gidin ve terminalde şu komutu çalıştırın:
 ~~~
 # macos/linux
