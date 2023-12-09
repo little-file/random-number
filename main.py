@@ -4,33 +4,87 @@
 import random
 
 def zerototen():
-    x = random.randint(0,10)
-    print("I kept a number between 0 and 10, guess.")
+    def human():
+                while True:
+                    x = random.randint(0,10)
+                    print(x)
+                    T = input("True(t) or False(f) Enter:")
+                    if T == "True" or T == "true" or T == "t" or T == "T":
+                        print("nice")
+                        continue
+                    elif T == "quit" or T == "q" or T == "exit" or T == "e":
+                        exit()
+                    elif T == "False" or T == "false" or T == "f" or T == "F":
+                        while True:
+                            g = input("can i try again ?(y/n): ")
+                            if g == "y":
+                                break
+                            elif g == "n":
+                                exit()
+    def robot():
+                x = random.randint(0,10)
+                print("I kept a number between 0 and 10, guess.")
+                while True:
+                    T = input("Enter: ")
+                    if T == "exit" or T == "quit" or T == "q" or T == "e":
+                        exit()
+                    z = int(T)
+                    if z  == x:
+                        print("True")
+                        x = random.randint(0,10)
+                    elif z != x:
+                        print("Try again.")
     while True:
-        T = input("Enter: ")
-        if T == "exit" or T == "quit" or T == "q" or T == "e":
-            break
-        z = int(T)
-        if z  == x:
-            print("True")
-            x = random.randint(0,10)
-        elif z != x:
-            print("Try again.")
+        print("""
+Will you guess or will I?(i/u)
+        """)
+        choice = input("Enter:")
+        if choice == "i":
+            human()
+        elif choice == "you" or choice == "u":
+            robot()     
+                 
 
 def zerotohundred():
-    x = random.randint(0,100)
-    print("I kept a number between 0 and 100, guess.")
+    def human():
+                while True:
+                    x = random.randint(0,100)
+                    print(x)
+                    T = input("True(t) or False(f) Enter:")
+                    if T == "True" or T == "true" or T == "t" or T == "T":
+                        print("nice")
+                        continue
+                    elif T == "quit" or T == "q" or T == "exit" or T == "e":
+                        exit()
+                    elif T == "False" or T == "false" or T == "f" or T == "F":
+                        while True:
+                            g = input("can i try again ?(y/n): ")
+                            if g == "y":
+                                break
+                            elif g == "n":
+                                exit()
+    def robot():
+                x = random.randint(0,100)
+                print("I kept a number between 0 and 10, guess.")
+                while True:
+                    T = input("Enter: ")
+                    if T == "exit" or T == "quit" or T == "q" or T == "e":
+                        exit()
+                    z = int(T)
+                    if z  == x:
+                        print("True")
+                        x = random.randint(0,10)
+                    elif z != x:
+                        print("Try again.")
     while True:
-        T = input("Enter: ")
-        if T == "exit" or T == "quit" or T == "q" or T == "e":
-            break
-        z = int(T)
-        if z  == x:
-            print("True")
-            x = random.randint(0,100)
-        elif z != x:
-            print("Try again.")
-
+        print("""
+Will you guess or will I?(i/u)
+        """)
+        choice = input("Enter:")
+        if choice == "i":
+            human()
+        elif choice == "you" or choice == "u":
+            robot()    
 
 while True:
     print("""
